@@ -1,8 +1,14 @@
 import os
 import json
 import random
-import tkinter as tk
-from tkinter import ttk, filedialog, messagebox, simpledialog
+try:
+    import tkinter as tk
+    from tkinter import ttk, filedialog, messagebox, simpledialog
+except ModuleNotFoundError as exc:
+    raise SystemExit(
+        "Tkinter is required to run this application. "
+        "Install it with 'sudo apt-get install python3-tk' on Debian/Ubuntu."
+    ) from exc
 
 
 DATA_DIR = "data"

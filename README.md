@@ -19,7 +19,13 @@ quote viewer. It is designed to run on minimal hardware like a Raspberry Pi Zero
 
 ## Running
 
-Install the dependencies and run:
+Make sure Tkinter is available. On Debian/Ubuntu you can install it with:
+
+```bash
+sudo apt-get install python3-tk
+```
+
+Then run the application with:
 
 ```bash
 python3 main.py
